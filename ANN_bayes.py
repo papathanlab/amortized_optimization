@@ -336,7 +336,7 @@ def convert_tensor_to_dict_list(X, space):
 data = pd.read_csv('mip_demands.csv')
 
 X = data.drop(["profile","m11", "m22","m33","m44","m55","m66","inff"], axis=1)
-y = data[["m11", "m22","m33","m44","m55","m66","inf"]]
+y = data[["m11", "m22","m33","m44","m55","m66","inff"]]
 
 # Split data into train and test sets
 from sklearn.model_selection import train_test_split
